@@ -3,7 +3,7 @@
 <tbody>
     <tr *ngFor="let product of productList">
        
-        <td (click)="updateQr(product)">{{product.name}}</td>
+        <td ><button (click)="updateQr(product)" > {{product.name}}</button></td>
     </tr>
 </tbody>
 </table>
