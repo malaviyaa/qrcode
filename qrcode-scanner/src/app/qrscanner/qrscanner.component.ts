@@ -22,9 +22,12 @@ export class QrscannerComponent implements OnInit {
   }
 
   productList: any[] = [
-    { id: 11, name: 'iphone 12', url: 'www.amazon.com'},
-    { id: 12, name: 'Samsung s20' ,url: 'www.ebay.com'},
-    { id: 13, name: 'Milk low fat', url: 'www.tesco.ie' }
+    { id: 11, name: 'iphone 12', url: 'www.amazon.com',date :'23-Jan-2022'},
+    { id: 12, name: 'Samsung s20' ,url: 'www.ebay.com',date :'22-Jan-2022'},
+    { id: 13, name: 'Milk low fat', url: 'www.tesco.ie',date :'21-Jan-2022' },
+    { id: 14, name: 'iphone 13', url: 'www.amazon.com',date :'23-Jan-2022'},
+    { id: 15, name: 'Samsung s21' ,url: 'www.ebay.com',date :'22-Jan-2022'},
+    { id: 16, name: 'Soy Milk', url: 'www.tesco.ie',date :'21-Jan-2022' }
    
   ];
 
