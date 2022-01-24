@@ -1,18 +1,25 @@
-<p>qrscanner works!</p>
+<p>Qr Scanner</p>
 <div>
-    <div style="width:400px; margin:0 auto;">
-        <table>
-            <tbody>
-                <tr *ngFor="let product of productList">
-                   
-                    <td ><button (click)="updateQr(product)" > {{product.name}} {{product.date}} </button></td>
-                </tr>
-            </tbody>
+    <table> <tr> <td>
+    <div>
+        <span>
+            <table border="1" >
+                <tbody>
+                    <tr *ngFor="let product of productList">
+                        
+                        <td ><button (click)="updateQr(product)" > {{product.name}} {{product.date}} </button></td>
+                    </tr>
+                </tbody>
             </table>
+        </span>
+    </div> </td>
+    <td>
+    <div>
+        <span>
+            <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
+        </span>
     </div>
-    <div style="float:right;">
-        <qrcode [qrdata]="myAngularxQrCode" [width]="256" [errorCorrectionLevel]="'M'"></qrcode>
-    </div>
-
-
-</div>
+</td>    
+</tr>
+    </table>
+</div> 
